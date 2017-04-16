@@ -14,7 +14,7 @@
     echo ("No number");
   } else if ($_GET['guess'] <74){
     echo ("Too low");
-  } else if ($_GET)['guess'] >74) {
+  } else if ($_GET['guess'] >74){
   echo ("Too high");
 } else {
   echo("Correct");
