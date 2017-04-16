@@ -12,9 +12,9 @@
     echo ("Too short");
   } else if (! is_numeric($_GET['guess'])){
     echo ("No number");
-  } else if ($_GET['guess'] <74){
+  } else if ($_GET['guess'] <24){
     echo ("Too low");
-  } else if ($_GET['guess'] >74){
+  } else if ($_GET['guess'] >24){
   echo ("Too high");
 } else {
   echo("Correct");
