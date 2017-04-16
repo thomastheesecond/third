@@ -1,23 +1,23 @@
 <html>
 <head>
-<title>Tom Mackey's Guessing Game</title>
+<title>Thomas Mackey Guessing Game</title>
 </head>
 <body>
 <h1>Welcome to my guessing game</h1>
 <p>
 <?php
   if ( ! isset ($_GET['guess'])){
-    echo ("No guess");
+    echo ("Missing guess parameter");
   } else if (strlen($_GET['guess'])<1){
-    echo ("Too short");
+    echo ("Your guess is too short");
   } else if (! is_numeric($_GET['guess'])){
-    echo ("No number");
-  } else if ($_GET['guess'] <24){
-    echo ("Too low");
-  } else if ($_GET['guess'] >24){
-  echo ("Too high");
+    echo ("Your guess is not a number");
+  } else if ($_GET['guess'] <54){
+    echo ("Your guess is too low");
+  } else if ($_GET['guess'] >54){
+  echo ("Your guess is too high");
 } else {
-  echo("Correct");
+  echo("Congratulations - You are right");
 }
 ?>
 </p>
